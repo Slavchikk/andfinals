@@ -54,7 +54,7 @@ public class AdapterRecipe  extends BaseAdapter {
         imageView.setImageBitmap(dcd.getUserImage(recipe.getImage()));
 
 
-        return null;
+        return v;
     }
 }
 
