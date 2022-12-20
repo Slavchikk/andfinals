@@ -43,7 +43,7 @@ public class AdapterRecipe  extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         View v = View.inflate(mContext,R.layout.activity_recipe,null);
         TextView fullRec = v.findViewById(R.id.txtFull);
-        TextView nameRec = v.findViewById(R.id.txtName);
+       TextView nameRec = v.findViewById(R.id.txtName);
         ImageView imageView = v.findViewById(R.id.imageView2);
         TextView caloryText = v.findViewById(R.id.txtCalory);
         TextView timeText = v.findViewById(R.id.txtTime);

@@ -18,7 +18,7 @@ public class DecodeImage {
             byte[] bytes = Base64.decode(encodedImg, Base64.DEFAULT);
             return BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
         }
-        else  return null;
-            //return BitmapFactory.decodeResource(DecodeImage.this.mContext.getResources(), R.drawable.images);
+        else
+            return BitmapFactory.decodeResource(DecodeImage.this.mContext.getResources(), R.drawable.images);
     }
 }
