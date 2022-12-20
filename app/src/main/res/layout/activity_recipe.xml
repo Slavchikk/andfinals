@@ -27,23 +27,43 @@
 
         <TextView
             android:id="@+id/txtFull"
-            android:layout_width="96dp"
-            android:layout_height="49dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="240dp"
-            android:layout_marginEnd="264dp"
+            android:layout_marginTop="246dp"
+            android:layout_marginEnd="314dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txtCalory"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="247dp"
+            android:layout_marginEnd="221dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="246dp"
+            android:layout_marginEnd="24dp"
             android:text="TextView" />
 
         <TextView
             android:id="@+id/txtName"
 
-            android:layout_width="96dp"
-            android:layout_height="49dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="242dp"
-            android:layout_marginEnd="92dp"
+            android:layout_marginTop="246dp"
+            android:layout_marginEnd="117dp"
             android:text="TextView" />
 
 

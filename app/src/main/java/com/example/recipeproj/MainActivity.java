@@ -68,7 +68,9 @@ public class MainActivity extends AppCompatActivity {
                             prodJson.getInt("idRecipe"),
                             prodJson.getString("fullRecipe"),
                             prodJson.getString("nameRecipe"),
-                            prodJson.getString("image")
+                            prodJson.getString("image"),
+                            prodJson.getString("calory"),
+                            prodJson.getString("timeGot")
 
 
                     );

@@ -45,14 +45,26 @@ public class AdapterRecipe  extends BaseAdapter {
         TextView fullRec = v.findViewById(R.id.txtFull);
         TextView nameRec = v.findViewById(R.id.txtName);
         ImageView imageView = v.findViewById(R.id.imageView2);
-
+        TextView caloryText = v.findViewById(R.id.txtCalory);
+        TextView timeText = v.findViewById(R.id.txtTime);
         Recipe recipe = recipeList.get(position);
+
+        caloryText.setText(recipe.getCalory());
+        timeText.setText(recipe.getTimeGot());
 
         fullRec.setText(recipe.getFullRecipe());
         nameRec.setText(recipe.getNameRecipe());
         DecodeImage dcd = new DecodeImage(mContext);
         imageView.setImageBitmap(dcd.getUserImage(recipe.getImage()));
 
+        v.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, ViewRecipe.class);
+                intent.putExtra(Recipe.class.getSimpleName(), recipe);
+                mContext.startActivity(intent);
+            }
+        });
 
         return v;
     }

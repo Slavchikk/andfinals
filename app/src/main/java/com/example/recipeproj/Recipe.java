@@ -15,12 +15,14 @@ public class Recipe implements Parcelable {
     public String nameRecipe;
 
     public String image;
-
-    public Recipe(Integer idRecipe, String fullRecipe, String nameRecipe,String image) {
+    public String calory;
+    public String timeGot;
+    public Recipe(Integer idRecipe, String fullRecipe, String nameRecipe,String image,String calory,String timeGot) {
         this.idRecipe = idRecipe;
         this.fullRecipe = fullRecipe;
         this.nameRecipe = nameRecipe;
-
+        this.calory = calory;
+        this.timeGot = timeGot;
         this.image = image;
     }
 
@@ -29,7 +31,8 @@ public class Recipe implements Parcelable {
         idRecipe = in.readInt();
         fullRecipe = in.readString();
         nameRecipe = in.readString();
-
+        calory = in.readString();
+        timeGot = in.readString();
         image = in.readString();
     }
 
@@ -38,7 +41,8 @@ public class Recipe implements Parcelable {
         dest.writeInt(idRecipe);
         dest.writeString(fullRecipe);
         dest.writeString(nameRecipe);
-
+        dest.writeString(calory);
+        dest.writeString(timeGot);
         dest.writeString(image);
     }
 
@@ -59,9 +63,14 @@ public class Recipe implements Parcelable {
         }
     };
 
+    public String getCalory() {return calory;}
+    public String getTimeGot() {return timeGot;}
+
     public Integer getIdRecipe() {
         return idRecipe;
     }
+    public  void setCalory(String calory) {this.calory = calory;}
+    public  void setTimeGot(String timeGot) {this.timeGot = timeGot;}
 
     public void setIdRecipe(Integer idRecipe) {
         this.idRecipe = idRecipe;
