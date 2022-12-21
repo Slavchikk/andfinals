@@ -206,14 +206,7 @@ public class ViewRecipe extends AppCompatActivity {
         intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         pickImg.launch(intent);
     }
-    public void ads(View v)
-    {
-        EncodeImage encodeImage = new EncodeImage();
-        //cars.setImage(encodeImage.Image(bitmap));
-        fullText.setText(encodeImage.Image(bitmap));
-        String fff = fullText.getText().toString();
 
-    }
     public void calcWeight(View v)
     {
 
